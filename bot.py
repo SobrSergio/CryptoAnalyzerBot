@@ -6,7 +6,6 @@ from handlers import analysis_handler, notifications_handler, news_handler
 import base
 from colorama import init, Fore, Style
 from models import SessionLocal
-
 def get_db():
     db = SessionLocal()
     try:
@@ -38,6 +37,8 @@ async def main():
     dp.include_router(news_handler.router)
 
     print(welcome_message)
+    
+    asyncio.create_task(notifications_handler.check_prices())
     try:
         await dp.start_polling(bot)
     except KeyboardInterrupt:
