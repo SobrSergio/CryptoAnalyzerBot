@@ -30,7 +30,7 @@ CryptoAnalyzerBot — это мощный бот для Telegram, который
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/your-username/CryptoAnalyzerBot.git
+   git clone https://github.com/SobrSergio/CryptoAnalyzerBot
    ```
 
 2. Перейдите в каталог проекта:
